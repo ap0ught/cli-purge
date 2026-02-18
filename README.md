@@ -45,3 +45,28 @@ You may specify URLs/CPCodes as a list of arguments, or pipe in a newline-delimi
 - `--section value` — Section of the credentials file (default: "ccu") [$AKAMAI_EDGERC_SECTION]
 - `--help`, `-h` — show help
 - `--version`, `-v` — print the version
+
+## Development with Mulch
+
+This project uses [Mulch](https://github.com/jayminwest/mulch) to accumulate expertise and learnings across development sessions. Mulch helps AI coding agents (and developers) understand project conventions, patterns, and decisions.
+
+### Quick Start
+
+```bash
+# View all accumulated expertise
+npx mulch-cli@latest query --all
+
+# Prime context for AI agents
+npx mulch-cli@latest prime
+
+# Record a new learning
+npx mulch-cli@latest record <domain> --type <type> --description "..."
+```
+
+### Expertise Domains
+
+- **go-cli** — CLI framework and command structure patterns
+- **purge-api** — Akamai purge API integration and usage
+- **build** — Build process, cross-compilation, and versioning
+
+See `.mulch/README.md` for detailed Mulch documentation.
