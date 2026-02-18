@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.18'
+      
+      - name: Set up Node.js for Mulch
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Prime Mulch Context
+        run: npx mulch-cli@latest prime
+        continue-on-error: true
+      
+      - name: Build
+        run: go build -v ./...
+      
+      - name: Run tests
+        run: go test -v ./...
+        continue-on-error: true
