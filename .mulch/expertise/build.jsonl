@@ -1,0 +1,3 @@
+{"type":"convention","content":"Build script (build.sh) cross-compiles for multiple platforms: macOS (arm64/amd64), Linux (amd64/386), Windows (amd64/386)","classification":"tactical","recorded_at":"2026-02-18T20:57:04.183Z","tags":["build","cross-compile"],"id":"mx-17550a"}
+{"type":"convention","content":"Build script generates SHA256 signatures (.sig files) for each binary using shasum -a 256","classification":"tactical","recorded_at":"2026-02-18T20:57:09.143Z","tags":["build","security","signatures"],"id":"mx-ab8e46"}
+{"type":"convention","content":"VERSION constant in akamai-purge.go must match build version argument, validated by build.sh","classification":"tactical","recorded_at":"2026-02-18T20:57:13.954Z","tags":["build","versioning"],"id":"mx-f7a018"}

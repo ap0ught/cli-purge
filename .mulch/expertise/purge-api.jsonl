@@ -1,0 +1,2 @@
+{"type":"convention","content":"Purge API uses Akamai CCU v3 (github.com/akamai/AkamaiOPEN-edgegrid-golang/ccu-v3) for cache clearing","classification":"tactical","recorded_at":"2026-02-18T20:56:54.395Z","tags":["api","akamai","ccu"],"id":"mx-a063c4"}
+{"type":"convention","content":"Supports three purge types: url (default), cpcode, and tag. Network can be production (default) or staging","classification":"tactical","recorded_at":"2026-02-18T20:56:59.235Z","tags":["purge","types"],"id":"mx-24f7bc"}

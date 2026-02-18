@@ -1,0 +1,2 @@
+{"type":"convention","content":"CLI built using github.com/akamai/cli-common-golang framework","classification":"tactical","recorded_at":"2026-02-18T20:56:44.493Z","tags":["framework","akamai"],"id":"mx-74fd71"}
+{"type":"convention","content":"Uses github.com/urfave/cli for command-line parsing and subcommands","classification":"tactical","recorded_at":"2026-02-18T20:56:49.319Z","tags":["cli","library"],"id":"mx-f37524"}
